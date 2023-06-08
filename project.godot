@@ -1,0 +1,45 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="Thud"
+run/main_scene="res://Pieces/GameBoard.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+Common="*res://common.gd"
+
+[display]
+
+window/size/width=360
+window/size/height=360
+
+[layer_names]
+
+2d_render/layer_1="Walls"
+2d_physics/layer_1="Walls"
+2d_render/layer_2="Dwarf"
+2d_physics/layer_2="Dwarf"
+2d_render/layer_3="Troll"
+2d_physics/layer_3="Troll"
+2d_render/layer_4="Thudstone"
+2d_physics/layer_4="Thudstone"
+2d_physics/layer_5="Moves"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://images/troll.png" type="Texture" id=1]
+[ext_resource path="res://Pieces/BasePiece.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Pieces/Troll.gd" type="Script" id=3]
+
+[node name="Troll" groups=[
+"troll",
+] instance=ExtResource( 2 )]
+collision_layer = 4
+collision_mask = 15
+script = ExtResource( 3 )
+troll = true
+
+[node name="RayCast2D" parent="." index="2"]
+enabled = true
+
+[node name="CenterContainer" parent="." index="3"]
+margin_left = -12.0
+margin_top = -12.0
+margin_right = 12.0
+margin_bottom = 12.0
+mouse_filter = 1
+
+[node name="TextureButton" parent="CenterContainer" index="0"]
+margin_right = 24.0
+margin_bottom = 24.0
+mouse_filter = 1
+texture_normal = ExtResource( 1 )

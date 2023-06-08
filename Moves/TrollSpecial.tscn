@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Moves/TrollMove.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Moves/TrollSpecial.gd" type="Script" id=2]
+[ext_resource path="res://images/circle_blue.png" type="Texture" id=3]
+
+[node name="TrollSpecial" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="Sprite" parent="." index="0"]
+texture_normal = ExtResource( 3 )
+
+[node name="Ray" type="RayCast2D" parent="." index="1"]
+position = Vector2( 12, 12 )
+enabled = true
+collision_mask = 2
+collide_with_areas = true
+
+[node name="Captures" type="Node" parent="." index="2"]
