@@ -1,4 +1,4 @@
-extends Area2D
+extends TextureButton
 
 var spawner
 
@@ -15,5 +15,6 @@ func executeMove():
 	spawner.clearMoves()
 	get_tree().call_group_flags(get_tree().GROUP_CALL_REALTIME, "board", "toggle", "dwarf")
 
-func _on_Sprite_pressed():
+func _pressed():
 	executeMove()
+

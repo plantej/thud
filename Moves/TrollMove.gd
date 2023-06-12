@@ -1,6 +1,16 @@
-extends "res://Moves/BaseMove.gd"
+extends TextureButton
+
+var spawner
+
+func setHomePiece(node):
+	spawner = node
+
+func clear():
+	queue_free()
 
 
+func _pressed():
+	executeMove()
 
 
 func executeMove():
@@ -8,9 +18,3 @@ func executeMove():
 	spawner.clearMoves()
 	spawner.buildCaptures()
 	#buildCaptures()
-
-
-
-func _on_Sprite_pressed():
-	executeMove()
-	#get_tree().call_group_flags(get_tree().GROUP_CALL_REALTIME, "move", "clear")

@@ -1,10 +1,23 @@
-extends "res://Moves/TrollMove.gd"
+extends TextureButton
 
 onready var ray = $Ray
 onready var capture = $Captures
 onready var redXSprite = preload("res://Moves/RedXSprite.tscn")
 var captures = []
 
+var spawner
+
+
+
+func setHomePiece(node):
+	spawner = node
+
+func clear():
+	queue_free()
+
+
+func _pressed():
+	executeMove()
 
 func parseCaptures():
 	for dir in Common.dirs:

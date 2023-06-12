@@ -1,8 +1,13 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Moves/BaseMove.tscn" type="PackedScene" id=1]
+[ext_resource path="res://images/circle_red.png" type="Texture" id=1]
 [ext_resource path="res://Moves/TrollMove.gd" type="Script" id=2]
 
-[node name="TrollMove" instance=ExtResource( 1 )]
-z_as_relative = false
+[node name="TrollMove" type="TextureButton"]
+margin_right = 24.0
+margin_bottom = 24.0
+texture_normal = ExtResource( 1 )
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
