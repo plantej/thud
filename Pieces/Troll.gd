@@ -4,13 +4,17 @@ onready var normalMove = preload("res://Moves/TrollMove.tscn")
 onready var captureMove = preload("res://Moves/TrollCapture.tscn")
 onready var specialMove = preload("res://Moves/TrollSpecial.tscn")
 onready var button = get_node("CenterContainer/TextureButton")
-#onready var normalMove = preload("res://Moves/BaseMove.tscn")
+
 
 func activate():
 #	button.set_disabled(false)
+	$CenterContainer.mouse_filter = Control.MOUSE_FILTER_STOP
+	button.mouse_filter = Control.MOUSE_FILTER_STOP
 	button.set_button_mask(BUTTON_MASK_LEFT)
 
 func deactivate():
+	$CenterContainer.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	button.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	button.set_button_mask(BUTTON_MASK_RIGHT)
 #	button.set_disabled(true)
 

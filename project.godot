@@ -26,7 +26,8 @@ Common="*res://common.gd"
 [display]
 
 window/size/width=360
-window/size/height=360
+window/size/height=720
+window/stretch/aspect="keep"
 
 [layer_names]
 
