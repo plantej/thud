@@ -3,7 +3,7 @@
 [ext_resource path="res://Pieces/BasePiece.gd" type="Script" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 8, 8 )
+extents = Vector2( 19, 19 )
 
 [node name="BasePiece" type="Area2D" groups=[
 "piece",
@@ -28,6 +28,10 @@ __meta__ = {
 }
 
 [node name="TextureButton" type="TextureButton" parent="CenterContainer"]
+margin_left = -21.0
+margin_top = -21.0
+margin_right = 21.0
+margin_bottom = 21.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

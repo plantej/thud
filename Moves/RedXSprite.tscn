@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://images/red_x.png" type="Texture" id=1]
+[ext_resource path="res://images/red_x_big.png" type="Texture" id=1]
 
 [node name="RedXSprite" type="Sprite"]
 texture = ExtResource( 1 )

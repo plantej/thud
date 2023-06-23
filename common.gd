@@ -1,6 +1,6 @@
 extends Node
 
-var tileSize = 24
+var tileSize = 42
 
 var N = Vector2(0,-1)
 var S = Vector2(0,1)

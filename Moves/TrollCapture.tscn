@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://images/red_x.png" type="Texture" id=1]
+[ext_resource path="res://images/red_x_big.png" type="Texture" id=1]
 [ext_resource path="res://Moves/BaseMove.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Moves/TrollCapture.gd" type="Script" id=3]
 

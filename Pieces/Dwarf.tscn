@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Pieces/Dwarf.gd" type="Script" id=1]
 [ext_resource path="res://Pieces/BasePiece.tscn" type="PackedScene" id=2]
-[ext_resource path="res://images/dwarf.png" type="Texture" id=3]
+[ext_resource path="res://images/dwarf_big.png" type="Texture" id=3]
 
 [node name="Dwarf" groups=[
 "dwarf",
@@ -16,12 +16,14 @@ dwarf = true
 enabled = true
 
 [node name="CenterContainer" parent="." index="3"]
-margin_left = -12.0
-margin_top = -12.0
-margin_right = 12.0
-margin_bottom = 12.0
+margin_left = -21.0
+margin_top = -21.0
+margin_right = 21.0
+margin_bottom = 21.0
 
 [node name="TextureButton" parent="CenterContainer" index="0"]
-margin_right = 24.0
-margin_bottom = 24.0
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 42.0
+margin_bottom = 42.0
 texture_normal = ExtResource( 3 )
